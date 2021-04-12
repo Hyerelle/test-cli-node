@@ -5,7 +5,7 @@ const execCount = require("../src/exec/exec-count");
 const mock = require("./mock.json");
 
 test("Basic count", () => {
-  const srcCountries = [...mock];
+  const srcCountries = mock;
   const distCountries = execCount(srcCountries);
 
   // - 1st country > 3 people

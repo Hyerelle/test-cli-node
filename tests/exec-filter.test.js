@@ -11,7 +11,7 @@ test("Basic filter - keep all animals", () => {
 });
 
 test("Basic filter - animals from 1st country", () => {
-  const srcCountries = [...mock];
+  const srcCountries = mock;
   let distCountries = execFilter(srcCountries, "A-0");
   // 1st country unchanged
   assert.equal(srcCountries[0], distCountries[0]);
@@ -21,7 +21,7 @@ test("Basic filter - animals from 1st country", () => {
 });
 
 test("Basic filter - empty result", () => {
-  const srcCountries = [...mock];
+  const srcCountries = mock;
   let distCountries = execFilter(srcCountries, "unknown-name");
   // check if there is countries
   assert.equal(srcCountries.length, 2);

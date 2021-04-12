@@ -1,5 +1,32 @@
 # Javascript developer test
 
+## HOW TO RUN
+
+### Main Program
+
+```
+node app.js --filter=ry
+node app.js --count
+node app.js --filter=ry --count
+```
+
+> `app.js` is just an empty shell that require `src/app.js` :
+>
+> - app code is only in `/src`
+> - sample command from the exercise still works :)
+
+### Tests
+
+```
+npm run test
+```
+
+> The testing library used here is UVU : very small footprint, yet efficient for this use case
+
+> Unit test for the `filter` method are always done on 'source' + 'destination' object, to ensure that the source object is not altered by the methods
+
+---
+
 ## Filter
 
 Your job is to write a command-line interface in Node.js.
